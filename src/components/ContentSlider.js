@@ -1,5 +1,4 @@
 import React from 'react';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
@@ -32,7 +31,9 @@ function ContentSlider() {
 
 export default ContentSlider;
 
-const Carousel = styled(Slider)``;
+const Carousel = styled(Slider)`
+    margin: 190px 0;
+`;
 const Wrap = styled.div`
     image {
         // 가,세로 % 미정

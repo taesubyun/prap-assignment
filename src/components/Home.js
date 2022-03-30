@@ -11,10 +11,11 @@ function Home() {
                 width='100%'
                 height='445px'
                 style={{
-                    objectFit: 'fill',
+                    objectFit: 'cover',
                     objectPosition: 'center',
                     width: '100%',
-                    height: '470px',
+                    height: '380px',
+                    position: 'relative',
                 }}
             >
                 <source src='/assets/video.mp4' type='video/mp4' />
