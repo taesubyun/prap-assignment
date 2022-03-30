@@ -11,9 +11,12 @@
     "react-dom": "^18.0.0",
     "react-paypal-express-checkout": "^1.0.5",
     "react-scripts": "5.0.0",
+<<<<<<< HEAD
     "react-slick": "^0.28.1",
     "react-tinder-card": "^1.4.5",
     "slick-carousel": "^1.8.1",
+=======
+>>>>>>> 13722790523f5cf113e5eacdd0d07ec8ce7186a5
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
