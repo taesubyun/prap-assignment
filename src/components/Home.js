@@ -8,13 +8,11 @@ function Home() {
                 muted
                 loop
                 playsinline
-                width='100%'
-                height='445px'
                 style={{
                     objectFit: 'cover',
                     objectPosition: 'center',
                     width: '100%',
-                    height: '380px',
+                    height: '445px',
                     position: 'relative',
                 }}
             >
