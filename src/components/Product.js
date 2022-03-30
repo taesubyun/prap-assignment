@@ -4,14 +4,26 @@ import styled from 'styled-components';
 function Product() {
     return (
         <>
-            <div style={{ border: ' 1px solid blue' }}>
+            <div
+                style={{
+                    margin: '0 120px',
+                    border: '1px solid blue',
+                }}
+            >
                 <div
-                    style={{
-                        textAlign: 'center',
-                        border: '1px solid red',
-                    }}
+                    className='product-container'
+                    style={{ margin: ' 96px 0 24px', border: '1px solid red' }}
                 >
-                    <h2>이 상품은 어떤가요?</h2>
+                    <h2
+                        style={{
+                            textAlign: 'center',
+                            fontSize: '28px',
+                            fontWeight: '700',
+                            lineHeight: '42px',
+                        }}
+                    >
+                        이 상품은 어떤가요?
+                    </h2>
                 </div>
                 <div
                     style={{ display: 'flex', justifyContent: 'space-between' }}
@@ -20,7 +32,6 @@ function Product() {
                         className='product-wrapper'
                         style={{
                             boxSizing: 'border-box',
-                            padding: '0 45px 0 45px',
                         }}
                     >
                         <Img src='/assets/test-img1.jpg' alt='' />
@@ -55,7 +66,12 @@ function Product() {
                         <Img src='/assets/test-img3.jpg' alt='' />
                         <div>
                             <div>NFT</div>
-                            <div>Awaken</div>
+                            <h3> / DEMETER /</h3>
+                            <div>Gala Mirissa</div>
+                            <div style={{ float: 'right' }}>
+                                <div>즉시 구매가</div>
+                                <div>11,306,704,382원</div>
+                            </div>
                         </div>
                     </div>
                 </div>
