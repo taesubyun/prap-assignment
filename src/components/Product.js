@@ -65,6 +65,7 @@ function Product() {
 export default Product;
 const ProductContainer = styled.div`
     margin: 0 120px;
+    padding: 0px 0px 70px 0;
 `;
 const ProductTitleBox = styled.div`
     margin: 96px 0 24px;
