@@ -90,7 +90,13 @@ const Img = styled.img`
     height: 275px;
 `;
 const ProductImg = styled.div``;
-const ProductContent = styled.div``;
+const ProductContent = styled.div`
+    margin-top: 10px;
+`;
 const ProductPrice = styled.span`
     float: right;
+    font-color: rgb(33, 34, 35);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
 `;

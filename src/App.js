@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Product from './components/Product';
 import ContentSlider from './components/ContentSlider';
 import Service from './components/Service';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <ContentSlider />
             <Product />
             <Service />
+            <Footer />
         </div>
     );
 }

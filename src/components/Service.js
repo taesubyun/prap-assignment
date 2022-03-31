@@ -60,7 +60,7 @@ export default Service;
 const ServiceContainer = styled.div``;
 const ContainerHeader = styled.div`
     text-align: center;
-    margin-top: 68px;
+    margin-top: 55px;
 `;
 const ContainerTitle = styled.div`
     font-size: 26px;
@@ -99,7 +99,7 @@ const IntroSubTitle = styled.p`
     padding-top: 18px;
 `;
 const Img = styled.img`
-    width: 308px;
-    height: 190px;
+    width: 345px;
+    height: 185px;
     fill: none;
 `;
