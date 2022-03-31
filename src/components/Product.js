@@ -78,10 +78,10 @@ const ProductTitle = styled.h2`
 const ProductWrapper = styled.div`
     display: flex;
     justify-content: center;
+    gap: 24px;
 `;
 const ProductSubject = styled.div`
     // boxSizing: 'border-box',
-    padding-right: 24px;
 `;
 
 const Img = styled.img`
