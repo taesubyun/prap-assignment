@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Home() {
     return (
@@ -43,21 +44,41 @@ function Home() {
                         }}
                     >
                         <div style={{ border: '2px solid black' }}>
-                            <h2>관심 가는 투자상품을 </h2>
+                            <h2
+                                style={{
+                                    textAlign: 'center',
+                                    margin: ' 0 auto',
+                                    fontSize: '28px',
+                                    lineHiehgt: '54px',
+                                    fontWeight: '400',
+                                    width: 'fitContent',
+                                    boxSizing: 'borderBox',
+                                }}
+                            >
+                                관심 가는 투자상품을
+                                {/* <br
+                                    style={{
+                                        display: 'none',
+                                    }}
+                                ></br> */}
+                                <span
+                                    style={{
+                                        fontWeight: '700',
+                                        fontSize: '28px',
+                                        lineHeight: '54px',
+                                    }}
+                                >
+                                    모두 골라보세요
+                                </span>
+                            </h2>
                         </div>
-                        <ul style={{ display: 'flex' }}>
-                            <li style={{ border: '1px solid red' }}>
-                                <div style={{ border: '1px solid blue' }}>
-                                    <img
-                                        style={{
-                                            border: '1px solid orange',
-                                        }}
-                                        src='./assets/product1.png'
-                                        width='90'
-                                        height='90'
-                                    ></img>
+
+                        <ProductWrapper>
+                            <li>
+                                <div>
+                                    <ProductImg src='./assets/product1.png'></ProductImg>
                                 </div>
-                                <div style={{ border: '1px solid pink' }}>
+                                <div>
                                     <h5
                                         style={{
                                             fontSize: '18px',
@@ -72,12 +93,7 @@ function Home() {
                                     </h5>
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        </ProductWrapper>
                     </div>
                 </div>
             </div>
@@ -85,3 +101,14 @@ function Home() {
     );
 }
 export default Home;
+
+const ProductWrapper = styled.ul`
+    display: flex;
+`;
+
+const ProductImg = styled.img`
+    width: 124px;
+    height: 124px;
+    fill: none;
+`;
+// fill : none??
