@@ -49,7 +49,7 @@ function Header() {
                 <img
                     src='/assets/search.png'
                     style={{
-                        width: '20px',
+                        width: '33px',
                         padding: '0 35px 0 15px',
                         cursor: 'pointer',
                     }}

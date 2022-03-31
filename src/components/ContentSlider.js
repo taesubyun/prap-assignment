@@ -8,7 +8,7 @@ function ContentSlider() {
     let settings = {
         dots: true,
         infinite: true,
-        speed: 100,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -17,13 +17,13 @@ function ContentSlider() {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <img src='/assets/imageslider1.png' />
+                <img src='/assets/sliderImg1.png' />
             </Wrap>
             <Wrap>
-                <img src='/assets/imageslider2.png' />
+                <img src='/assets/sliderImg2.png' />
             </Wrap>
             <Wrap>
-                <img src='/assets/imageslider3.png' />
+                <img src='/assets/sliderImg3.png' />
             </Wrap>
         </Carousel>
     );
@@ -31,11 +31,8 @@ function ContentSlider() {
 
 export default ContentSlider;
 
-const Carousel = styled(Slider)`
-    margin: 190px 0;
-`;
+const Carousel = styled(Slider)``;
 const Wrap = styled.div`
     image {
-        // 가,세로 % 미정
     }
 `;
