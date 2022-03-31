@@ -1,31 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Footer() {
     return (
-        <div style={{ paddingTop: '30px 0px' }}>
-            <div
-                style={{
-                    padding: '0px 120px',
-
-                    display: 'flex',
-                }}
-            >
-                <div
-                    style={{
-                        display: 'flex',
-                        width: '100%',
-
-                        gap: '66px',
-                    }}
-                >
+        <ContentInfo>
+            <ContentMenuBox>
+                <ContentContainer>
                     <div>
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '8px',
-                            }}
-                        >
+                        <ContentMenu>
                             <img
                                 src='/assets/prap.png'
                                 widht='92'
@@ -33,283 +15,135 @@ function Footer() {
                                 fill='none'
                                 style={{ marginBottom: '10px' }}
                             ></img>
-                            <a
+                            <MenuList
                                 href='https://about.prap.kr/'
                                 target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
                             >
                                 회사소개
-                            </a>
-                            <a
-                                href=''
+                            </MenuList>
+                            <MenuList
+                                href='https://about.prap.kr/career'
                                 target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
                             >
                                 프랩 합류하기
-                            </a>
-                            <a
-                                href=''
+                            </MenuList>
+                            <MenuList
+                                href='https://about.prap.kr/contact'
                                 target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
                             >
                                 제휴제안
-                            </a>
-                        </div>
+                            </MenuList>
+                        </ContentMenu>
                     </div>
-                    {/* // */}
-                    <div>
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '8px',
-                            }}
-                        >
-                            <div>
-                                <h3
-                                    style={{
-                                        margin: '0px 0px 4px',
-                                        fontSize: '18px',
-                                        lineHeight: '27px',
-                                        fontWeight: '400',
-                                    }}
-                                >
-                                    안내
-                                </h3>
-                            </div>
-                            <a
-                                href=''
-                                target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                공지사항
-                            </a>
-                            <a
-                                href=''
-                                target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                이벤트
-                            </a>
-                        </div>
-                    </div>
-                    {/* // */}
-                    <div>
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '8px',
-                            }}
-                        >
-                            <div>
-                                <h3
-                                    style={{
-                                        margin: '0px 0px 4px',
-                                        fontSize: '18px',
-                                        lineHeight: '27px',
-                                        fontWeight: '400',
-                                    }}
-                                >
-                                    정책
-                                </h3>
-                            </div>
-                            <a
-                                href=''
-                                target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                이용약관
-                            </a>
-                            <a
-                                href=''
-                                target='-_blank'
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'rgb(104, 105, 107)',
-                                    fontSize: ' 16px',
-                                    lineHeight: '24px',
-                                    fontWeight: '400',
 
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                개인정보처리방침
-                            </a>
-                        </div>
+                    <div>
+                        <ContentMenu>
+                            <div>
+                                <MenuHeader>안내</MenuHeader>
+                            </div>
+                            <MenuList href='/' target='-_blank'>
+                                공지사항
+                            </MenuList>
+                            <MenuList href='/' target='-_blank'>
+                                이벤트
+                            </MenuList>
+                        </ContentMenu>
                     </div>
-                </div>
-            </div>
-            <div
-                className='bottomOfFooter'
-                style={{
-                    display: 'flex',
-                    color: 'rgb(179, 180, 183)',
-                    padding: '30px 120px 0px 120px',
-                    gap: '7px',
-                }}
-            >
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    대표이사
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 400,
-                    }}
-                >
-                    박아윤
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    |
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    사업자등록번호
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 400,
-                    }}
-                >
-                    622-88-01428
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    |
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    주소
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 400,
-                    }}
-                >
-                    서울시 강남구 역삼로 172, 8층
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    |
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 700,
-                    }}
-                >
-                    문의
-                </span>
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 400,
-                    }}
-                >
-                    hello@prap.kr
-                </span>
-            </div>
-            <div
-                style={{
-                    color: 'rgb(179, 180, 183)',
-                    gap: '7px',
-                    padding: '0 120px 30px 120px',
-                }}
-            >
-                <span
-                    style={{
-                        fontSize: '12px',
-                        lineHeight: '18px',
-                        fontWeight: 400,
-                    }}
-                >
-                    ©All rights reserved. 2022. (주)타르트
-                </span>
-            </div>
-        </div>
+
+                    <div>
+                        <ContentMenu>
+                            <div>
+                                <MenuHeader>정책</MenuHeader>
+                            </div>
+                            <MenuList href='' target='-_blank'>
+                                이용약관
+                            </MenuList>
+                            <MenuList href='' target='-_blank'>
+                                개인정보처리방침
+                            </MenuList>
+                        </ContentMenu>
+                    </div>
+                </ContentContainer>
+            </ContentMenuBox>
+
+            <CompanyInfo>
+                <BoldSpan>대표이사</BoldSpan>
+                <WeightSpan>박아윤</WeightSpan>
+                <BoldSpan> | </BoldSpan>
+                <BoldSpan>사업자등록번호</BoldSpan>
+                <WeightSpan>622-88-01428</WeightSpan>
+                <BoldSpan>|</BoldSpan>
+                <BoldSpan>주소</BoldSpan>
+                <WeightSpan>서울시 강남구 역삼로 172, 8층</WeightSpan>
+                <BoldSpan>|</BoldSpan>
+                <BoldSpan>문의</BoldSpan>
+                <WeightSpan>hello@prap.kr</WeightSpan>
+            </CompanyInfo>
+            <InfoDropdown>
+                <WeightSpan>©All rights reserved. 2022. (주)타르트</WeightSpan>
+            </InfoDropdown>
+        </ContentInfo>
     );
 }
 
 export default Footer;
+
+const ContentInfo = styled.div`
+    padding-top: 30px;
+`;
+
+const ContentMenuBox = styled.div`
+    display: flex;
+    padding: 0px 120px;
+`;
+
+const ContentContainer = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 66px;
+`;
+const ContentMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+`;
+
+const MenuHeader = styled.h3`
+    margin: 0px 0px 4px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+`;
+const MenuList = styled.a`
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(104, 105, 107);
+    cursor: pointer;
+    text-decoration: none;
+`;
+
+const CompanyInfo = styled.div`
+    display: flex;
+    color: rgb(179, 180, 183);
+    padding: 30px 120px 0px 120px;
+    gap: 7px;
+`;
+
+const BoldSpan = styled.span`
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+`;
+
+const WeightSpan = styled.span`
+    font-size: 12px;
+    line-ehight: 18px;
+    font-weight: 400;
+`;
+
+const InfoDropdown = styled.div`
+    padding: 0px 120px 30px 120px;
+    color: rgb(179, 180, 183);
+    gap: 7px;
+`;

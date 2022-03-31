@@ -11,7 +11,7 @@ function Product() {
                 <ProductWrapper>
                     <ProductSubject>
                         <ProductImg>
-                            <Img src='/assets/test-img1.jpg' alt='' />
+                            <Img src='/assets/test-img1.png' alt='' />
                         </ProductImg>
                         <ProductContent>
                             <div>비상장주식</div>
@@ -34,7 +34,7 @@ function Product() {
                     </ProductSubject>
                     <ProductSubject>
                         <ProductImg>
-                            <Img src='/assets/test-img2.jpg' alt='' />
+                            <Img src='/assets/test-img2.png' alt='' />
                         </ProductImg>
                         <ProductContent>
                             <div>NFT</div>
@@ -44,7 +44,7 @@ function Product() {
                     </ProductSubject>
                     <ProductSubject>
                         <ProductImg>
-                            <Img src='/assets/test-img3.jpg' alt='' />
+                            <Img src='/assets/test-img3.png' alt='' />
                         </ProductImg>
                         <ProductContent>
                             <div>NFT</div>
@@ -80,14 +80,14 @@ const ProductWrapper = styled.div`
     display: flex;
     justify-content: center;
     gap: 24px;
+    /* box-sizing: border-box; */
 `;
-const ProductSubject = styled.div`
-    // boxSizing: 'border-box',
-`;
+const ProductSubject = styled.div``;
 
 const Img = styled.img`
     width: 323.5px;
     height: 275px;
+    border-radius: 9px;
 `;
 const ProductImg = styled.div``;
 const ProductContent = styled.div`

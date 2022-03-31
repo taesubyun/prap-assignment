@@ -164,12 +164,3 @@ const Button = styled.button`
     font-weight: 400;
     background-color: rgb(107, 229, 182);
 }`;
-
-//   border: '2px solid blue',
-//                         borderRadius: '8px',
-//                         backgroundColor: 'rgb(254, 254, 254)',
-//                         boxShadow: 'rgb(0 0 0 / 10%) 0px 0px 15px 0px',
-//                         padding: ' 32px 60px 40px',
-//                         // position: 'absolute',
-//                         // width: 'calc (100% - 240px)',
-//                         maxWidth: '1200px',
