@@ -11,22 +11,74 @@ function Product() {
                 <ProductWrapper>
                     <ProductSubject>
                         <ProductImg>
-                            <Img src='/assets/test-img1.png' alt='' />
+                            <Img src='/assets/test-img1.png' />
                         </ProductImg>
                         <ProductContent>
-                            <div>비상장주식</div>
-                            <h3>비바리퍼블리카</h3>
-                            <div>기업가치 15조 8,112억</div>
-                            <div>기업가치 15조 8,112억</div>
                             <div>
+                                <div
+                                    style={{
+                                        borderBottom:
+                                            '1px solid rgb(239, 240, 243)',
+                                        padding: '5px 0',
+                                    }}
+                                >
+                                    비상장주식
+                                </div>
+                                <h3
+                                    style={{
+                                        borderBottom:
+                                            '1px solid rgb(239, 240, 243)',
+                                        padding: '5px 0',
+                                    }}
+                                >
+                                    비바리퍼블리카
+                                </h3>
+                                <div
+                                    style={{
+                                        borderBottom:
+                                            '1px solid rgb(239, 240, 243)',
+                                        padding: '5px 0',
+                                    }}
+                                >
+                                    기업가치 15조 8,112억
+                                </div>
+                                <div
+                                    style={{
+                                        borderBottom:
+                                            '1px solid rgb(239, 240, 243)',
+                                        padding: '10px 0',
+                                    }}
+                                >
+                                    기업가치 15조 8,112억
+                                </div>
+                            </div>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
                                 <span>285주</span>
                                 <ProductPrice>97,700원</ProductPrice>
                             </div>
-                            <div>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
                                 <span>39주</span>
                                 <ProductPrice>97,800원</ProductPrice>
                             </div>
-                            <div>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
                                 <span>85주</span>
                                 <ProductPrice>98,000원</ProductPrice>
                             </div>
@@ -37,9 +89,34 @@ function Product() {
                             <Img src='/assets/test-img2.png' alt='' />
                         </ProductImg>
                         <ProductContent>
-                            <div>NFT</div>
-                            <h3> =E V E= </h3>
-                            <div>Erich Caparas</div>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                NFT
+                            </div>
+                            <h3
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                {' '}
+                                =E V E={' '}
+                            </h3>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                Erich Caparas
+                            </div>
                         </ProductContent>
                     </ProductSubject>
                     <ProductSubject>
@@ -47,12 +124,45 @@ function Product() {
                             <Img src='/assets/test-img3.png' alt='' />
                         </ProductImg>
                         <ProductContent>
-                            <div>NFT</div>
-                            <h3> / DEMETER /</h3>
-                            <div>Gala Mirissa</div>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                NFT
+                            </div>
+                            <h3
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                {' '}
+                                / DEMETER /
+                            </h3>
+                            <div
+                                style={{
+                                    borderBottom:
+                                        '1px solid rgb(239, 240, 243)',
+                                    padding: '5px 0',
+                                }}
+                            >
+                                Gala Mirissa
+                            </div>
                             <div style={{ float: 'right' }}>
                                 <div>즉시 구매가</div>
-                                <div>11,306,704,382원</div>
+                                <div
+                                    style={{
+                                        borderBottom:
+                                            '1px solid rgb(239, 240, 243)',
+                                        padding: '5px 0',
+                                    }}
+                                >
+                                    11,306,704,382원
+                                </div>
                             </div>
                         </ProductContent>
                     </ProductSubject>
@@ -90,8 +200,9 @@ const Img = styled.img`
     border-radius: 9px;
 `;
 const ProductImg = styled.div``;
+
 const ProductContent = styled.div`
-    margin-top: 10px;
+    margin-top: 16px;
 `;
 const ProductPrice = styled.span`
     float: right;

@@ -127,7 +127,6 @@ export default Home;
 
 const ProductWrapper = styled.ul`
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
@@ -152,15 +151,15 @@ const ContainerTitle = styled.h5`
 
 const Button = styled.button`
     position: absolute;
-    bottom: 88px;
-    left: calc(50% - 108px);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
     width: 235px;
     height: 45px;
-    border-radius: 52px;
+    left: calc(50% - 108px);
+    bottom: 88px;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    border-radius: 52px;
     background-color: rgb(107, 229, 182);
+    cursor: pointer;
 }`;

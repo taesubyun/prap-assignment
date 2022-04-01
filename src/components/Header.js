@@ -83,8 +83,8 @@ function Header() {
 export default Header;
 
 const Container = styled.nav`
-    height: 70px;
     display: flex;
+    height: 70px;
     align-items: center;
     padding-left: 55px;
     box-shadow: 1px 1px 8px 0px;

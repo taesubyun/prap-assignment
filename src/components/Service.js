@@ -59,20 +59,20 @@ export default Service;
 
 const ServiceContainer = styled.div``;
 const ContainerHeader = styled.div`
-    text-align: center;
     margin-top: 55px;
+    text-align: center;
 `;
 const ContainerTitle = styled.div`
     font-size: 26px;
-    line-height: 54px;
     font-weight: 700;
+    line-height: 54px;
 `;
 const ContainerSubTitle = styled.div`
-    white-space: pre-wrap;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     padding-top: 14px;
+    white-space: pre-wrap;
 `;
 
 const ServcieSection = styled.div`
@@ -92,11 +92,11 @@ const IntroTitle = styled.div`
     text-align: center;
 `;
 const IntroSubTitle = styled.p`
-    wite-space: pre-wrap;
     font-size: 160x;
     font-weight: 400;
     line-height: 24px;
     padding-top: 18px;
+    wite-space: pre-wrap;
 `;
 const Img = styled.img`
     width: 345px;
